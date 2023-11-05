@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;700&display=swap');
+
+body{
+    line-height: 1.7;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+header.navbar-container{
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 10px;
+}
+
+header.navbar-container .name {
+    display: flex;
+    align-items: center;
+}
+
+header.navbar-container .name img{
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+header.navbar-container .logo img{
+    width: 250px;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #373f2b;
+    padding: .5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: rgb(199, 185, 209);
+    color: white;
+    font-weight: bold;
+}
+
+.about {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    background-image: url('.assets/contact.jpeg');
+}
+
+.about-satu{
+    width: 20%;
+    padding-top: 60px;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.about-satu img {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.about-dua{
+    padding-top: 0px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-dua .title {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.about-dua h1 {
+    margin-bottom: 5px;
+}
+
+.about-dua p {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.about-dua h5 {
+    margin-top: 0px;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    gap: 1.05rem;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgb(199, 185, 209);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.content h1{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.content h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+}
+
+.experiences{
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.experiences div{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experiences .title h4, h3{
+    padding-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.experiences .content ul{
+    margin-left: 20px;
+    margin-top: auto;
+    padding: 0;
+}
+
+.experiences .content p{
+    margin-top: auto;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+button{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: rgb(245, 244, 246);
+    padding: .5rem;
+    border-radius: 99px;
+    border-color: rgb(245, 244, 246);
+    transition: all .2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(199, 185, 209);
+    color: white;
+    font-weight: bold;
+}
+
+button a{
+    text-decoration: none;
+}
+
+section.education ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem 1rem;
+}
+
+section.education li{
+    list-style-type: none;
+    text-align: center;
+}
+
+section.education li a{
+    text-decoration: none;
+    color: black;
+}
+
+section.education li a img:hover, section.sosmed li a:hover{
+    box-shadow: 0 0 20px rgb(199, 185, 209);
+}
+
+section.education img{
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section.sosmed ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1.5rem;
+    margin: 10px;
+}
+
+section.sosmed li{
+    list-style-type: none;
+    margin: 5px;
+}
+
+section.sosmed li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-radius: 900px;
+}
+section.sosmed li i{
+    font-size: 30px;
+    color: black;
+}
+section.sosmed h3{
+    font-size: 18px;
+    color: black;
+    padding: 0;
+}
+
+footer{
+    color: white;
+    background-color: rgb(199, 185, 209);
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-list ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-list ul li a {
+        text-decoration: none;
+        font-size: 1.05rem;
+        font-weight: 500;
+        padding: .5rem 1.5rem;
+        border-radius: 900px;
+        transition: all .2s ease-in-out;
+    }
+
+    .nav-list ul li:hover a {
+        background-color: rgb(199, 185, 209);
+        color: white;
+        font-weight: bold;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .about {
+        flex-direction: column; 
+        align-items: center;
+        gap: 0;
+    }
+
+    .about-satu {
+        width: 100%; 
+        padding-right: 0; 
+        text-align: center; 
+    }
+
+    .about-satu img {
+        max-width: 250px; 
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .about-dua {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .about-dua .title {
+        font-size: 24px; 
+    }
+
+    .about-dua p, .card p {
+        font-size: 15px; 
+    }
+
+    .content h1{
+        font-size: 24px;
+        font-weight: bold;
+        color: rgb(199, 185, 209);
+        margin-top: 0;
+    }
+
+    .content h2{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(1, 1, 1);
+        margin-top: 0;
+    }
+
+    .sosmed h3, section.sosmed li a{
+        font-size: 15px;
+    }
+
+    footer p{
+        font-size: 10px;
+    }
+}
