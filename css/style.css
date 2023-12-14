@@ -77,7 +77,7 @@ header.navbar-container .nav-list li:hover a{
 }
 
 .about-satu{
-    width: 20%;
+    width: auto;
     padding-top: 60px;
     text-align: right;
     margin: 0 auto;
